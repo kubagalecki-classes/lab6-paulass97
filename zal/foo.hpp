@@ -17,6 +17,6 @@ vector< char > foo(list< Human >& people)
     transform(people.begin(), people.end(), ret_v.rbegin(), [](Human& it) 
     {
         ret_v(it->isMonster() ? 'n' : 'y');
-    }
+    });
   return ret_v;
 }
